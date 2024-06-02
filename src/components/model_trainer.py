@@ -46,6 +46,7 @@ class ModelTrainer:
                 "CatBoostRegressor": CatBoostRegressor(verbose=False),
                 "AdaBoost Regressor": AdaBoostRegressor()
             }
+            
 
             model_report = evaluate_models(X_train, y_train, X_test, y_test, models)
             logging.info(f"Model Report: {model_report}")
